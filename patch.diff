@@ -1,0 +1,115 @@
+From b48660455b9187e47fd8684765f9be2ce736823a Mon Sep 17 00:00:00 2001
+From: hirahara7 <hiraharaayaka7@gmail.com>
+Date: Thu, 18 Aug 2016 15:47:01 +0900
+Subject: [PATCH] no message
+
+---
+ src/main/webapp/WEB-INF/views/web/index.jsp | 78 +++++++++++++++--------------
+ 1 file changed, 40 insertions(+), 38 deletions(-)
+
+diff --git a/src/main/webapp/WEB-INF/views/web/index.jsp b/src/main/webapp/WEB-INF/views/web/index.jsp
+index 134d880..046fac6 100644
+--- a/src/main/webapp/WEB-INF/views/web/index.jsp
++++ b/src/main/webapp/WEB-INF/views/web/index.jsp
+@@ -7,8 +7,7 @@
+ <title>To Be Null</title>
+ </head>
+ <body>
+-
+-	<head>
++<head>
+ <link href="web/css/style.css" rel='stylesheet' type='text/css' />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" type="web/image/x-icon"
+@@ -26,49 +25,52 @@
+ <script type="application/x-javascript">
+ 	
+ 	
++	
+ 	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+ 	 function hideURLbar(){ window.scrollTo(0,1); } 
+ 
+ 
++
+ </script>
+-</script><!----webfonts---->
+-	<link
+-		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'
+-		rel='stylesheet' type='text/css'>
+-	<!----//webfonts---->
+-	<!-- Global CSS for the page and tiles -->
+-	<link rel="stylesheet" href="web/css/main.css">
+-	<!-- //Global CSS for the page and tiles -->
+-	<!---start-click-drop-down-menu----->
+-	<script src="web/js/jquery.min.js"></script>
+-	<!----start-dropdown--->
+-	<script type="text/javascript">
+-		var $ = jQuery.noConflict();
+-		$(function() {
+-			$('#activator').click(function() {
+-				$('#box').animate({
+-					'top' : '0px'
+-				}, 500);
+-			});
+-			$('#boxclose').click(function() {
+-				$('#box').animate({
+-					'top' : '-700px'
+-				}, 500);
+-			});
++</script>
++<!----webfonts---->
++<link
++	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'
++	rel='stylesheet' type='text/css'>
++<!----//webfonts---->
++<!-- Global CSS for the page and tiles -->
++<link rel="stylesheet" href="web/css/main.css">
++<!-- //Global CSS for the page and tiles -->
++<!---start-click-drop-down-menu----->
++<script src="web/js/jquery.min.js"></script>
++<!----start-dropdown--->
++<script type="text/javascript">
++	var $ = jQuery.noConflict();
++	$(function() {
++		$('#activator').click(function() {
++			$('#box').animate({
++				'top' : '0px'
++			}, 500);
+ 		});
+-		$(document).ready(function() {
+-			//Hide (Collapse) the toggle containers on load
+-			$(".toggle_container").hide();
+-			//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+-			$(".trigger").click(function() {
+-				$(this).toggleClass("active").next().slideToggle("slow");
+-				return false; //Prevent the browser jump to the link anchor
+-			});
+-
++		$('#boxclose').click(function() {
++			$('#box').animate({
++				'top' : '-700px'
++			}, 500);
+ 		});
+-	</script>
+-	<!----//End-dropdown--->
+-	<!---//End-click-drop-down-menu----->
++	});
++	$(document).ready(function() {
++		//Hide (Collapse) the toggle containers on load
++		$(".toggle_container").hide();
++		//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
++		$(".trigger").click(function() {
++			$(this).toggleClass("active").next().slideToggle("slow");
++			return false; //Prevent the browser jump to the link anchor
++		});
++
++	});
++</script>
++<!----//End-dropdown--->
++<!---//End-click-drop-down-menu----->
+ </head>
+ <body>
+ 	<!---start-wrap---->
+-- 
+2.9.3.windows.1
+
